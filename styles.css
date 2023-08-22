@@ -73,22 +73,21 @@ body {
 
 .result {
   position: relative;
-  width: 500px;
+  width: 60%;
+  margin-left: 20%;
+  margin-right: 20%;
   height: 400px;
   top: 25%;
-  left: 50%;
-  margin-left: -250px;
-
- }
-
-
- .card-image{
-  width: 500px;
-  height: 400px;
-  padding-top: 10px;
-  padding-bottom: 10px;
   display: flex;
-  flex-direction: column;
-  justify-content: space-around;
+  flex-direction: row;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
 }
 
+ .card-image{
+  width: 400px;
+  height: 300px;
+  padding-bottom: 30px;
+ }
+
+ 
