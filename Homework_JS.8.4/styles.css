@@ -1,0 +1,108 @@
+.inputForm {
+    margin-left: 20%;
+    margin-right: 20%;
+    margin-top: 10%;
+    margin-bottom: 5%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    text-transform: uppercase;
+    color: rgb(72, 72, 72);
+    font-family: Neucha, sans-serif;
+    
+}
+
+.text {
+    text-shadow: shadow: rgba(0, 0, 0, .2) 15px 28px 25px -18px;
+    font-size: x-large;
+    width: 100%;
+    text-align: center;
+}
+
+.inputContainer {
+    width: 100%;
+    margin-top: 7%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+
+input {
+    text-shadow: rgba(0, 0, 0, .2) 15px 28px 25px -18px;
+    width: 40px;
+    height: 20px;
+    font-size: medium;
+    border: none;
+    transition: 180ms box-shadow ease-in-out;
+    color: rgb(72, 72, 72);
+}
+
+input:focus {
+    outline: none;
+    border: none;
+    border-bottom: 1px solid rgb(183, 182, 183);
+  }
+
+  ::placeholder {
+    color: rgb(212, 212, 212);
+  }
+
+.btnContainer {
+    width: 100%;
+}
+
+.btn {
+    position: relative;
+    left: 50%;
+    margin-left: -50px;
+    width: 100px;
+    cursor: pointer;
+    align-self: center;
+    background-color: #fff;
+    background-image: none;
+    background-position: 0 90%;
+    background-repeat: repeat no-repeat;
+    background-size: 4px 3px;
+    border-radius: 15px 225px 255px 15px 15px 255px 225px 15px;
+    border-style: solid;
+    border-width: 2px;
+    box-shadow: rgba(0, 0, 0, .2) 15px 28px 25px -18px;
+    box-sizing: border-box;
+    color: rgb(72, 72, 72);;
+    display: inline-block;
+    font-family: Neucha, sans-serif;
+    font-size: 1rem;
+    line-height: 23px;
+    outline: none;
+    padding: .75rem;
+    text-decoration: none;
+    transition: all 235ms ease-in-out;
+    border-bottom-left-radius: 15px 255px;
+    border-bottom-right-radius: 225px 15px;
+    border-top-left-radius: 255px 15px;
+    border-top-right-radius: 15px 225px;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+}
+
+
+.btn:hover {
+  box-shadow: rgba(0, 0, 0, .3) 2px 8px 8px -5px;
+  transform: translate3d(0, 2px, 0);
+}
+
+.btn:focus {
+  box-shadow: rgba(0, 0, 0, .3) 2px 8px 4px -6px;
+}
+
+
+.result {
+    display: flex;
+    flex-flow: row wrap-reverse;
+    justify-content: center;
+    width: 100%;
+    margin-top: 7%;
+}
