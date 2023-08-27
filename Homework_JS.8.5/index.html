@@ -5,30 +5,44 @@
 
   <body>
 
-    <div class="inputForm">  
+    <ul class="circles">
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
 
-        <div class="text">Enter the desired image size from 100 till 300</div>
 
-        <div class="inputContainer">
-            <div>
-                <label for="width" class="widthText">Width:</label>
-                <input id="width" type="text" name="inputboxWidth" value="" placeholder="XXX" id="width">
+        <div class="inputForm">  
+
+            <div class="text">Enter the desired page number & limit from 1 till 10</div>
+
+            <div class="inputContainer">
+                <div>
+                    <label for="pageNumberID" class="pageNumber">Page number:</label>
+                    <input id="pageNumberID" type="text" name="pageNumber" value="" placeholder="X">
+                </div>
+                <div>
+                    <label for="limitID" class="limit">Limit:</label>
+                    <input id="limitID" type="text" name="limit" value="" placeholder="X">
+                </div>
             </div>
-            <div>
-                <label for="height" class="heightText">Height:</label>
-                <input id="height" type="text" name="inputboxHeight" value="" placeholder="XXX" id="height">
-            </div>
+
         </div>
 
-    </div>
-
-    <div class="btnContainer">
-        <button class="btn" value="Click">Get a pic</button>
-    </div>
+        <div class="btnContainer">
+            <button class="btn">Get a pic</button>
+        </div>
     
-    <div class="result"></div> 
+        <div class="resultDiv"></div> 
     
-
+        </ul>
+    
   </body>
 
     <script src="script.js"></script>
