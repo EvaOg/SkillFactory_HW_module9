@@ -23,19 +23,20 @@ const xmlString = `
 
 const xmlDOM = parser.parseFromString(xmlString, "text/xml");
 
-
 const students = xmlDOM.querySelectorAll("student");
 
 
-for (const el of students) {
-  let naMe = el.quesySelector("name")
-  let nameFirst = el.querySelector("first");
-  let nameSecond = el.querySelector("second");
-  let age = students.querySelector("age");
-  let prof = students.querySelector("prof");
-  let lang = students.getAttribute("lang");
+for (const student of students) {
+  let naMe = student.quesySelector("name")
+  let nameFirst = naMe.querySelector("first").textContent;
+  let nameSecond = naMe.querySelector("second").textContent;
+  let fullName = `${nameFirst} ${nameSecond}`
+  let age = student.querySelector("age");
+  let prof = student.querySelector("prof");
+  let lang = student.getAttribute("lang");
 
   let result = {
+    name: fullName,
     age: age.textContent,
     prof: prof.textContent,
     lang: lang.textContent,
@@ -44,8 +45,3 @@ for (const el of students) {
   console.log(result)
   
 }
-      
-
-
-
-
